@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="signup" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="450.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.signUpController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="nameField" onAction="#enterPressed" prefHeight="50.0" prefWidth="145.0" promptText="Name" style="-fx-border-color: pink;">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lastNameField" onAction="#enterPressed" prefHeight="50.0" prefWidth="145.0" promptText="Lastname" style="-fx-border-color: pink;">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="emailField" onAction="#enterPressed" prefHeight="50.0" prefWidth="300.0" promptText="E-mail" style="-fx-border-color: pink;">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField fx:id="usernameField" onAction="#enterPressed" prefHeight="50.0" prefWidth="300.0" promptText="Username" style="-fx-border-color: pink;">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <PasswordField fx:id="passwordField" onAction="#enterPressed" prefHeight="50.0" prefWidth="300.0" promptText="Password" style="-fx-border-color: pink;">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <PasswordField fx:id="confirmPasswordField" onAction="#enterPressed" prefHeight="50.0" prefWidth="300.0" promptText="Confirm Password" style="-fx-border-color: pink;">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#signUpAction" prefHeight="60.0" prefWidth="300.0" style="-fx-border-color: pink;" text="Sign-up">
+               <HBox.margin>
+                  <Insets bottom="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Label fx:id="confirmationLabel" textAlignment="CENTER" visible="false" />
+   </children>
+</VBox>

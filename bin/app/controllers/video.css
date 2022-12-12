@@ -1,0 +1,23 @@
+Button:hover{
+    -fx-opacity: 1;
+}
+
+.call{
+    -fx-background-color: #c3d0d4;
+    -fx-background-radius: 30;
+    -fx-border-color: green;
+    -fx-border-width: 5;
+    -fx-border-radius: 30;
+    -fx-opacity: 0.6;
+    -fx-text-fill: green;
+}
+
+.end{
+    -fx-background-color: #c3d0d4;
+    -fx-background-radius: 30;
+    -fx-border-color: red;
+    -fx-border-width: 5;
+    -fx-border-radius: 30;
+    -fx-opacity: 0.6;
+    -fx-text-fill: red;
+}

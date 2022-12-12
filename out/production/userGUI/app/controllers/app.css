@@ -1,0 +1,32 @@
+.root{
+    -fx-background-image: url("/BackGround/background-1.jpg");
+}
+
+.scene{
+    -fx-background-color: transparent;
+    -fx-border-color: #c3d0d4;
+    -fx-border-width: 5;
+    -fx-border-radius: 15;
+    -fx-background-radius: 16;
+
+}
+
+Button {
+    -fx-background-color: #c3d0d4;
+    -fx-background-radius: 18;
+    -fx-border-color: #8cb48c;
+    -fx-border-width: 5;
+    -fx-border-radius: 15;
+    -fx-opacity: 0.6;
+}
+
+Button:hover {
+    -fx-cursor: hand;
+    -fx-opacity:1;
+}
+
+.msgClass{
+    -fx-border-color: #c3d0d4;
+    -fx-border-radius: 18;
+    -fx-border-width: 5;
+}
